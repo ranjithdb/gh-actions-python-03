@@ -30,7 +30,7 @@ jobs:
       run: ruff check --output-format=github --target-version=py312
 
     - name: Format code with Ruff
-      run: ruff format --diff --target-version=py312
+      run: ruff format --target-version=py312
       continue-on-error: true
 
     - name: Run tests with pytest and measure coverage
